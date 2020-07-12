@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		822126D38893C216A073071E /* Pods_ios_moamoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9747CB929D16B362B610EE95 /* Pods_ios_moamoa.framework */; };
+		B5B19DFF24BAE2790067B340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B19DFE24BAE2790067B340 /* AppDelegate.swift */; };
+		B5B19E0124BAE2790067B340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B19E0024BAE2790067B340 /* SceneDelegate.swift */; };
+		B5B19E0324BAE2790067B340 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B19E0224BAE2790067B340 /* ContentView.swift */; };
+		B5B19E0524BAE27D0067B340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B19E0424BAE27D0067B340 /* Assets.xcassets */; };
+		B5B19E0824BAE27D0067B340 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B19E0724BAE27D0067B340 /* Preview Assets.xcassets */; };
+		B5B19E0B24BAE27D0067B340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B19E0924BAE27D0067B340 /* LaunchScreen.storyboard */; };
+		B5B19E1624BAE27E0067B340 /* ios_moamoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B19E1524BAE27E0067B340 /* ios_moamoaTests.swift */; };
+		F965D7771FF721814F0E2930 /* Pods_ios_moamoaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B6CBCFD5BC9D77E350680D /* Pods_ios_moamoaTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5B19E1224BAE27E0067B340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B19DF324BAE2780067B340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5B19DFA24BAE2780067B340;
+			remoteInfo = "ios-moamoa";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B6CBCFD5BC9D77E350680D /* Pods_ios_moamoaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_moamoaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		251CC3F16DB1EECBF30FE983 /* Pods-ios-moamoaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-moamoaTests.release.xcconfig"; path = "Target Support Files/Pods-ios-moamoaTests/Pods-ios-moamoaTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CF7110936A66EC61BD0CBF8 /* Pods-ios-moamoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-moamoa.release.xcconfig"; path = "Target Support Files/Pods-ios-moamoa/Pods-ios-moamoa.release.xcconfig"; sourceTree = "<group>"; };
+		88D462AC81C6DC8DD42F4FBD /* Pods-ios-moamoaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-moamoaTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-moamoaTests/Pods-ios-moamoaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9747CB929D16B362B610EE95 /* Pods_ios_moamoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_moamoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B19DFB24BAE2790067B340 /* ios-moamoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-moamoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B19DFE24BAE2790067B340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5B19E0024BAE2790067B340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5B19E0224BAE2790067B340 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5B19E0424BAE27D0067B340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5B19E0724BAE27D0067B340 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5B19E0A24BAE27D0067B340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5B19E0C24BAE27D0067B340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B19E1124BAE27E0067B340 /* ios-moamoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-moamoaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B19E1524BAE27E0067B340 /* ios_moamoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_moamoaTests.swift; sourceTree = "<group>"; };
+		B5B19E1724BAE27E0067B340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03195F5CC480CE64DB2A1E8 /* Pods-ios-moamoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-moamoa.debug.xcconfig"; path = "Target Support Files/Pods-ios-moamoa/Pods-ios-moamoa.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5B19DF824BAE2780067B340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822126D38893C216A073071E /* Pods_ios_moamoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B19E0E24BAE27E0067B340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F965D7771FF721814F0E2930 /* Pods_ios_moamoaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4447FA6928B585EC330E5F8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D03195F5CC480CE64DB2A1E8 /* Pods-ios-moamoa.debug.xcconfig */,
+				6CF7110936A66EC61BD0CBF8 /* Pods-ios-moamoa.release.xcconfig */,
+				88D462AC81C6DC8DD42F4FBD /* Pods-ios-moamoaTests.debug.xcconfig */,
+				251CC3F16DB1EECBF30FE983 /* Pods-ios-moamoaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71E2DF130F6AE248DD9B1192 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9747CB929D16B362B610EE95 /* Pods_ios_moamoa.framework */,
+				00B6CBCFD5BC9D77E350680D /* Pods_ios_moamoaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5B19DF224BAE2780067B340 = {
+			isa = PBXGroup;
+			children = (
+				B5B19DFD24BAE2790067B340 /* ios-moamoa */,
+				B5B19E1424BAE27E0067B340 /* ios-moamoaTests */,
+				B5B19DFC24BAE2790067B340 /* Products */,
+				4447FA6928B585EC330E5F8A /* Pods */,
+				71E2DF130F6AE248DD9B1192 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5B19DFC24BAE2790067B340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5B19DFB24BAE2790067B340 /* ios-moamoa.app */,
+				B5B19E1124BAE27E0067B340 /* ios-moamoaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5B19DFD24BAE2790067B340 /* ios-moamoa */ = {
+			isa = PBXGroup;
+			children = (
+				B5B19DFE24BAE2790067B340 /* AppDelegate.swift */,
+				B5B19E0224BAE2790067B340 /* ContentView.swift */,
+				B5B19E0C24BAE27D0067B340 /* Info.plist */,
+				B5B19E2024BAE29A0067B340 /* SupportingFiles */,
+				B5B19E0624BAE27D0067B340 /* Preview Content */,
+			);
+			path = "ios-moamoa";
+			sourceTree = "<group>";
+		};
+		B5B19E0624BAE27D0067B340 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5B19E0724BAE27D0067B340 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5B19E1424BAE27E0067B340 /* ios-moamoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5B19E1524BAE27E0067B340 /* ios_moamoaTests.swift */,
+				B5B19E1724BAE27E0067B340 /* Info.plist */,
+			);
+			path = "ios-moamoaTests";
+			sourceTree = "<group>";
+		};
+		B5B19E2024BAE29A0067B340 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B5B19E0024BAE2790067B340 /* SceneDelegate.swift */,
+				B5B19E0424BAE27D0067B340 /* Assets.xcassets */,
+				B5B19E0924BAE27D0067B340 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5B19DFA24BAE2780067B340 /* ios-moamoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B19E1A24BAE27E0067B340 /* Build configuration list for PBXNativeTarget "ios-moamoa" */;
+			buildPhases = (
+				4A7302F572A1DBE4E6255F3A /* [CP] Check Pods Manifest.lock */,
+				B5B19DF724BAE2780067B340 /* Sources */,
+				B5B19DF824BAE2780067B340 /* Frameworks */,
+				B5B19DF924BAE2780067B340 /* Resources */,
+				B3B25A17446AB78B458B430B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-moamoa";
+			productName = "ios-moamoa";
+			productReference = B5B19DFB24BAE2790067B340 /* ios-moamoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5B19E1024BAE27E0067B340 /* ios-moamoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B19E1D24BAE27E0067B340 /* Build configuration list for PBXNativeTarget "ios-moamoaTests" */;
+			buildPhases = (
+				97802222A517686EBD142886 /* [CP] Check Pods Manifest.lock */,
+				B5B19E0D24BAE27E0067B340 /* Sources */,
+				B5B19E0E24BAE27E0067B340 /* Frameworks */,
+				B5B19E0F24BAE27E0067B340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B19E1324BAE27E0067B340 /* PBXTargetDependency */,
+			);
+			name = "ios-moamoaTests";
+			productName = "ios-moamoaTests";
+			productReference = B5B19E1124BAE27E0067B340 /* ios-moamoaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5B19DF324BAE2780067B340 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = comgongju;
+				TargetAttributes = {
+					B5B19DFA24BAE2780067B340 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B5B19E1024BAE27E0067B340 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B5B19DFA24BAE2780067B340;
+					};
+				};
+			};
+			buildConfigurationList = B5B19DF624BAE2780067B340 /* Build configuration list for PBXProject "ios-moamoa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5B19DF224BAE2780067B340;
+			productRefGroup = B5B19DFC24BAE2790067B340 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5B19DFA24BAE2780067B340 /* ios-moamoa */,
+				B5B19E1024BAE27E0067B340 /* ios-moamoaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5B19DF924BAE2780067B340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B19E0B24BAE27D0067B340 /* LaunchScreen.storyboard in Resources */,
+				B5B19E0824BAE27D0067B340 /* Preview Assets.xcassets in Resources */,
+				B5B19E0524BAE27D0067B340 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B19E0F24BAE27E0067B340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A7302F572A1DBE4E6255F3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-moamoa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97802222A517686EBD142886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-moamoaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3B25A17446AB78B458B430B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-moamoa/Pods-ios-moamoa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-moamoa/Pods-ios-moamoa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-moamoa/Pods-ios-moamoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5B19DF724BAE2780067B340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B19DFF24BAE2790067B340 /* AppDelegate.swift in Sources */,
+				B5B19E0124BAE2790067B340 /* SceneDelegate.swift in Sources */,
+				B5B19E0324BAE2790067B340 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B19E0D24BAE27E0067B340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B19E1624BAE27E0067B340 /* ios_moamoaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5B19E1324BAE27E0067B340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5B19DFA24BAE2780067B340 /* ios-moamoa */;
+			targetProxy = B5B19E1224BAE27E0067B340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5B19E0924BAE27D0067B340 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B19E0A24BAE27D0067B340 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5B19E1824BAE27E0067B340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5B19E1924BAE27E0067B340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5B19E1B24BAE27E0067B340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03195F5CC480CE64DB2A1E8 /* Pods-ios-moamoa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ios-moamoa/Preview Content\"";
+				DEVELOPMENT_TEAM = PW7FC27RJ5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ios-moamoa/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comgongju.ios-moamoa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5B19E1C24BAE27E0067B340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF7110936A66EC61BD0CBF8 /* Pods-ios-moamoa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ios-moamoa/Preview Content\"";
+				DEVELOPMENT_TEAM = PW7FC27RJ5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ios-moamoa/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comgongju.ios-moamoa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5B19E1E24BAE27E0067B340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D462AC81C6DC8DD42F4FBD /* Pods-ios-moamoaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW7FC27RJ5;
+				INFOPLIST_FILE = "ios-moamoaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comgongju.ios-moamoaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-moamoa.app/ios-moamoa";
+			};
+			name = Debug;
+		};
+		B5B19E1F24BAE27E0067B340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251CC3F16DB1EECBF30FE983 /* Pods-ios-moamoaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW7FC27RJ5;
+				INFOPLIST_FILE = "ios-moamoaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.comgongju.ios-moamoaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-moamoa.app/ios-moamoa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5B19DF624BAE2780067B340 /* Build configuration list for PBXProject "ios-moamoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B19E1824BAE27E0067B340 /* Debug */,
+				B5B19E1924BAE27E0067B340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B19E1A24BAE27E0067B340 /* Build configuration list for PBXNativeTarget "ios-moamoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B19E1B24BAE27E0067B340 /* Debug */,
+				B5B19E1C24BAE27E0067B340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B19E1D24BAE27E0067B340 /* Build configuration list for PBXNativeTarget "ios-moamoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B19E1E24BAE27E0067B340 /* Debug */,
+				B5B19E1F24BAE27E0067B340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5B19DF324BAE2780067B340 /* Project object */;
+}
