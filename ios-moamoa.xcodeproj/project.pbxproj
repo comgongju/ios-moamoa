@@ -12,6 +12,9 @@
 		B52BED0724C19FD40098DFD3 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52BED0624C19FD40098DFD3 /* StringConstant.swift */; };
 		B52BED0A24C1A3B00098DFD3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52BED0924C1A3B00098DFD3 /* HistoryView.swift */; };
 		B59A6F2724C1AA3F005191F8 /* HistoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A6F2624C1AA3F005191F8 /* HistoryHeaderView.swift */; };
+		B59A6F2924C1B39C005191F8 /* CalendarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A6F2824C1B39C005191F8 /* CalendarItemView.swift */; };
+		B59A6F2B24C1B3DA005191F8 /* CalendarItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A6F2A24C1B3DA005191F8 /* CalendarItemViewModel.swift */; };
+		B59A6F2F24C1B786005191F8 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A6F2E24C1B786005191F8 /* DateFormatter+Extension.swift */; };
 		B5B19DFF24BAE2790067B340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B19DFE24BAE2790067B340 /* AppDelegate.swift */; };
 		B5B19E0124BAE2790067B340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B19E0024BAE2790067B340 /* SceneDelegate.swift */; };
 		B5B19E0324BAE2790067B340 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B19E0224BAE2790067B340 /* ContentView.swift */; };
@@ -44,6 +47,9 @@
 		B52BED0624C19FD40098DFD3 /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 		B52BED0924C1A3B00098DFD3 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		B59A6F2624C1AA3F005191F8 /* HistoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeaderView.swift; sourceTree = "<group>"; };
+		B59A6F2824C1B39C005191F8 /* CalendarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItemView.swift; sourceTree = "<group>"; };
+		B59A6F2A24C1B3DA005191F8 /* CalendarItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItemViewModel.swift; sourceTree = "<group>"; };
+		B59A6F2E24C1B786005191F8 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		B5B19DFB24BAE2790067B340 /* ios-moamoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-moamoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B19DFE24BAE2790067B340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B19E0024BAE2790067B340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 		B5B19E2424BAEB750067B340 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B59A6F2824C1B39C005191F8 /* CalendarItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				B5B19E2824BB0BA20067B340 /* Color+Extension.swift */,
+				B59A6F2E24C1B786005191F8 /* DateFormatter+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 		B5B19E3C24BB27900067B340 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B59A6F2A24C1B3DA005191F8 /* CalendarItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -415,12 +424,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59A6F2724C1AA3F005191F8 /* HistoryHeaderView.swift in Sources */,
+				B59A6F2B24C1B3DA005191F8 /* CalendarItemViewModel.swift in Sources */,
 				B5B19E2924BB0BA20067B340 /* Color+Extension.swift in Sources */,
+				B59A6F2924C1B39C005191F8 /* CalendarItemView.swift in Sources */,
 				B5B19E3324BB13F70067B340 /* HistoryTabbarView.swift in Sources */,
 				B52BED0A24C1A3B00098DFD3 /* HistoryView.swift in Sources */,
 				B52BED0724C19FD40098DFD3 /* StringConstant.swift in Sources */,
 				B5B19DFF24BAE2790067B340 /* AppDelegate.swift in Sources */,
 				B5B19E0124BAE2790067B340 /* SceneDelegate.swift in Sources */,
+				B59A6F2F24C1B786005191F8 /* DateFormatter+Extension.swift in Sources */,
 				B5B19E0324BAE2790067B340 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

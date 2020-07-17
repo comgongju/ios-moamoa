@@ -11,12 +11,6 @@ import SwiftUI
 struct HistoryHeaderView: View {
     @Binding var presentedDate: Date
     
-    private static let headerFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY, MM"
-        return formatter
-    }()
-    
     var body: some View {
         VStack {
             HStack(spacing: 37) {
@@ -30,7 +24,7 @@ struct HistoryHeaderView: View {
                         .foregroundColor(.white)
                 }
 
-                Text("\(presentedDate, formatter: Self.headerFormatter)")
+                Text("\(presentedDate, formatter: DateFormatter.yearCommaMonth)")
                     .frame(width: 100, height: 25)
                     .font(.system(size: 22, weight: .bold))
                     .foregroundColor(.white)
