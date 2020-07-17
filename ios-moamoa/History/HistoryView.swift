@@ -15,10 +15,12 @@ enum HistoryPage {
 
 struct HistoryView: View {
     @State private var currentPage: HistoryPage = .calendar
+    @State private var presentedDate: Date = Date()
     
     var body: some View {
         VStack(spacing: 20) {
             Spacer()
+            HistoryHeaderView(presentedDate: $presentedDate)
             HistoryTabbarView(currentPage: $currentPage)
         }
         .background(Color.mainColor)
