@@ -12,4 +12,6 @@ struct Str {
     static let historyCalendarName = "달력"
     static let historyListName = "내역"
     static let weekdaysName: [String] = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"]
+    static let incomeText = "수입"
+    static let spendingText = "지출"
 }

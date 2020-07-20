@@ -13,6 +13,7 @@ struct CalendarView: View {
         
     var body: some View {
         VStack(spacing: 0) {
+            CalendarHeaderView(totalIncome: self.viewModel.totalIncome, totalSpending: self.viewModel.totalSpending)
             HStack(spacing: 0) {
                 ForEach(0..<7, id: \.self) { i in
                     Text(Str.weekdaysName[i])
@@ -26,6 +27,9 @@ struct CalendarView: View {
             setCalendarItem()
         }
         .background(Color.white)
+        .cornerRadius(radius: 20, corners: .topRight)
+        .cornerRadius(radius: 20, corners: .topLeft)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
     }
     
     private func setCalendarItem() -> some View {
