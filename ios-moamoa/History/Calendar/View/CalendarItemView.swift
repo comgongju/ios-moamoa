@@ -15,10 +15,10 @@ struct CalendarItemView: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("\(self.viewModel.date, formatter: DateFormatter.onlyDate)")
-                    .foregroundColor(.ssubTextColor)
+                    .foregroundColor(self.viewModel.date.isDateInToday ? .subTextColor : .ssubTextColor)
                     .padding(.top, 8)
                     .padding(.leading, 7)
-                    .font(.system(size: 13))
+                    .font(.system(size: 13, weight: self.viewModel.date.isDateInToday ? .bold : .regular))
                 Spacer()
             }
             

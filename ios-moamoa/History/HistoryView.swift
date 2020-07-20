@@ -20,11 +20,18 @@ struct HistoryView: View {
     var body: some View {
         VStack(spacing: 20) {
             Spacer()
+                .frame(maxHeight: 62)
             HistoryHeaderView(presentedDate: $presentedDate)
             HistoryTabbarView(currentPage: $currentPage)
+            CalendarView(viewModel:
+                CalendarViewModel(
+                    date: presentedDate,
+                    totalIncome: 10000000,
+                    totalSpending: -1000000
+                )
+            )
         }
-        .background(Color.mainColor)
-        .edgesIgnoringSafeArea(.top)
+        .background(Color.mainColor.edgesIgnoringSafeArea(.top))
     }
 }
 
