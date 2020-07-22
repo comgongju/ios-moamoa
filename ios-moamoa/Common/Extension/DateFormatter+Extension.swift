@@ -20,4 +20,10 @@ extension DateFormatter {
         formatter.dateFormat = "d"
         return formatter
     }()
+    
+    static let withDot: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YYYY. MM. dd"
+        return formatter
+    }()
 }

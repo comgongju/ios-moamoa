@@ -12,32 +12,30 @@ struct HistoryHeaderView: View {
     @Binding var presentedDate: Date
     
     var body: some View {
-        VStack {
-            HStack(spacing: 37) {
-                Button(action: {
-                    guard let previousMonthDate = Calendar.current.date(byAdding: .month, value: -1, to: self.presentedDate) else { return }
-                    self.$presentedDate.wrappedValue = previousMonthDate
-                }) {
-                    Image("btn_arrow_back")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.white)
-                }
-
-                Text("\(presentedDate, formatter: DateFormatter.yearCommaMonth)")
-                    .frame(width: 100, height: 25)
-                    .font(.system(size: 22, weight: .bold))
+        HStack(spacing: 37) {
+            Button(action: {
+                guard let previousMonthDate = Calendar.current.date(byAdding: .month, value: -1, to: self.presentedDate) else { return }
+                self.$presentedDate.wrappedValue = previousMonthDate
+            }) {
+                Image("btn_arrow_back")
+                    .resizable()
+                    .frame(width: 20, height: 20)
                     .foregroundColor(.white)
-                
-                Button(action: {
-                    guard let nextMonthDate = Calendar.current.date(byAdding: .month, value: 1, to: self.presentedDate) else { return }
-                    self.$presentedDate.wrappedValue = nextMonthDate
-                }) {
-                    Image("btn_arrow_forward")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.white)
-                }
+            }
+
+            Text("\(presentedDate, formatter: DateFormatter.yearCommaMonth)")
+                .frame(width: 100, height: 25)
+                .font(.system(size: 22, weight: .bold))
+                .foregroundColor(.white)
+            
+            Button(action: {
+                guard let nextMonthDate = Calendar.current.date(byAdding: .month, value: 1, to: self.presentedDate) else { return }
+                self.$presentedDate.wrappedValue = nextMonthDate
+            }) {
+                Image("btn_arrow_forward")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.white)
             }
         }
     }

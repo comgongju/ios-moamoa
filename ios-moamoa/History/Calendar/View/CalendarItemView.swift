@@ -42,8 +42,7 @@ struct CalendarItemView: View {
 struct CalendarItemView_Previews: PreviewProvider {
     static var previews: some View {
         CalendarItemView(viewModel: CalendarItemViewModel(
-            date: Date(timeIntervalSince1970: 0),
-            dayHistory: [10000, -1000, 4000, -2000])
+            date: Date(timeIntervalSince1970: 0))
         )
             .previewLayout(.fixed(width: 53, height: 80))
     }
