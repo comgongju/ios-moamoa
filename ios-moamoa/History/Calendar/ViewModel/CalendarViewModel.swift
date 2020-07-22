@@ -21,9 +21,13 @@ struct CalendarViewModel {
         self.itemViewModel = []
         
         for i in 1...date.endOfMonth.day {
-            guard let dailyDate = Calendar.current.date(bySetting: .day, value: i, of: date) else { continue }
-            itemViewModel.append(CalendarItemViewModel(date: dailyDate, dayHistory: [1000, 1000, -100, -2000]))
+            guard let dailyDate = Calendar.current.date(bySetting: .day, value: i, of: date.startOfMonth) else { continue }
+            itemViewModel.append(CalendarItemViewModel(date: dailyDate))
         }
+    }
+    
+    subscript(_ date: Date) -> CalendarItemViewModel? {
+        itemViewModel.first(where: { $0.date == date })
     }
 }
 

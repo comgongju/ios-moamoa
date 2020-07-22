@@ -9,27 +9,39 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @State var isDetailPresenting: Bool = false
+    @State var presentedDetailDate: Date = Date()
     var viewModel: CalendarViewModel
         
     var body: some View {
-        VStack(spacing: 0) {
-            CalendarHeaderView(totalIncome: self.viewModel.totalIncome, totalSpending: self.viewModel.totalSpending)
-            HStack(spacing: 0) {
-                ForEach(0..<7, id: \.self) { i in
-                    Text(Str.weekdaysName[i])
-                        .frame(maxWidth: .infinity)
-                        .foregroundColor(.ssubTextColor)
-                        .font(Font.system(size: 10))
-                        .padding(.top, 4)
-                        .padding(.bottom, 1)
-                }
-            }.background(Color.layerSectionColor)
-            setCalendarItem()
+        ZStack {
+            VStack(spacing: 0) {
+                CalendarHeaderView(totalIncome: self.viewModel.totalIncome, totalSpending: self.viewModel.totalSpending)
+                HStack(spacing: 0) {
+                    ForEach(0..<7, id: \.self) { i in
+                        Text(Str.weekdaysName[i])
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.ssubTextColor)
+                            .font(Font.system(size: 10))
+                            .padding(.top, 4)
+                            .padding(.bottom, 1)
+                    }
+                }.background(Color.layerSectionColor)
+                setCalendarItem()
+            }
+            .background(Color.white)
+            .cornerRadius(radius: 40, corners: .topRight)
+            .cornerRadius(radius: 40, corners: .topLeft)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+            
+            self.viewModel[self.presentedDetailDate].flatMap { itemViewModel in
+                GeometryReader { geometry in
+                    BottomSheetView(isPresenting: self.$isDetailPresenting, height: geometry.size.height) {
+                        CalendarDetailView(presentedDate: self.$presentedDetailDate, viewModel: itemViewModel)
+                    }
+                }.edgesIgnoringSafeArea(.all)
+            }
         }
-        .background(Color.white)
-        .cornerRadius(radius: 20, corners: .topRight)
-        .cornerRadius(radius: 20, corners: .topLeft)
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
     }
     
     private func setCalendarItem() -> some View {
@@ -42,7 +54,12 @@ struct CalendarView: View {
                         return AnyView(Color.white)
                     } else if self.viewModel.itemViewModel.count > i * 7 + j - startWeekdayOfMonth {
                         let itemViewModel = self.viewModel.itemViewModel[i * 7 + j - startWeekdayOfMonth]
-                        return AnyView(CalendarItemView(viewModel: itemViewModel))
+                        return AnyView(CalendarItemView(viewModel: itemViewModel)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                        self.isDetailPresenting = true
+                                        self.presentedDetailDate = itemViewModel.date
+                                })
                     }
                     return AnyView(Color.white)
                 }
