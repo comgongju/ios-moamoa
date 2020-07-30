@@ -44,4 +44,12 @@ extension Date {
     var isDateInToday: Bool {
         Calendar.current.isDateInToday(self)
     }
+    
+    var previousDay: Date {
+        return Calendar.current.date(byAdding: .day, value: -1, to: self)!
+    }
+    
+    var nextDay: Date {
+        return Calendar.current.date(byAdding: .day, value: 1, to: self)!
+    }
 }
