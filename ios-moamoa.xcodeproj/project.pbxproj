@@ -15,6 +15,8 @@
 		B54439C924C73B150054D4A5 /* CalendarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54439C824C73B150054D4A5 /* CalendarDetailView.swift */; };
 		B54439CB24C75B980054D4A5 /* DailyHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54439CA24C75B980054D4A5 /* DailyHistoryModel.swift */; };
 		B54439CD24C81B540054D4A5 /* DailyHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54439CC24C81B540054D4A5 /* DailyHistoryList.swift */; };
+		B568F77824D2A62300341641 /* CalendarDetailPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568F77724D2A62300341641 /* CalendarDetailPagingView.swift */; };
+		B568F77A24D2A76100341641 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568F77924D2A76100341641 /* PagerView.swift */; };
 		B598007224C5A0B800CCB739 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598007124C5A0B800CCB739 /* Date+Extension.swift */; };
 		B598007424C5A54D00CCB739 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598007324C5A54D00CCB739 /* CalendarHeaderView.swift */; };
 		B598007624C5AA4500CCB739 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598007524C5AA4500CCB739 /* View+Extension.swift */; };
@@ -59,6 +61,8 @@
 		B54439C824C73B150054D4A5 /* CalendarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDetailView.swift; sourceTree = "<group>"; };
 		B54439CA24C75B980054D4A5 /* DailyHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHistoryModel.swift; sourceTree = "<group>"; };
 		B54439CC24C81B540054D4A5 /* DailyHistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHistoryList.swift; sourceTree = "<group>"; };
+		B568F77724D2A62300341641 /* CalendarDetailPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDetailPagingView.swift; sourceTree = "<group>"; };
+		B568F77924D2A76100341641 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		B598007124C5A0B800CCB739 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		B598007324C5A54D00CCB739 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
 		B598007524C5AA4500CCB739 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B54439C324C726900054D4A5 /* BottomSheetView.swift */,
+				B568F77924D2A76100341641 /* PagerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				B598007324C5A54D00CCB739 /* CalendarHeaderView.swift */,
 				B59A6F2824C1B39C005191F8 /* CalendarItemView.swift */,
 				B54439C824C73B150054D4A5 /* CalendarDetailView.swift */,
+				B568F77724D2A62300341641 /* CalendarDetailPagingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -472,11 +478,13 @@
 				B598007624C5AA4500CCB739 /* View+Extension.swift in Sources */,
 				B59A6F3124C1BC11005191F8 /* CalendarView.swift in Sources */,
 				B59A6F3324C1BC35005191F8 /* CalendarViewModel.swift in Sources */,
+				B568F77824D2A62300341641 /* CalendarDetailPagingView.swift in Sources */,
 				B5B19E2924BB0BA20067B340 /* Color+Extension.swift in Sources */,
 				B59A6F2924C1B39C005191F8 /* CalendarItemView.swift in Sources */,
 				B5B19E3324BB13F70067B340 /* HistoryTabbarView.swift in Sources */,
 				B52BED0A24C1A3B00098DFD3 /* HistoryView.swift in Sources */,
 				B52BED0724C19FD40098DFD3 /* StringConstant.swift in Sources */,
+				B568F77A24D2A76100341641 /* PagerView.swift in Sources */,
 				B5B19DFF24BAE2790067B340 /* AppDelegate.swift in Sources */,
 				B54439C924C73B150054D4A5 /* CalendarDetailView.swift in Sources */,
 				B54439C424C726900054D4A5 /* BottomSheetView.swift in Sources */,

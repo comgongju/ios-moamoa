@@ -37,7 +37,10 @@ struct CalendarView: View {
             self.viewModel[self.presentedDetailDate].flatMap { itemViewModel in
                 GeometryReader { geometry in
                     BottomSheetView(isPresenting: self.$isDetailPresenting, height: geometry.size.height) {
-                        CalendarDetailView(presentedDate: self.$presentedDetailDate, viewModel: itemViewModel)
+                        VStack {
+                            CalendarDetailPagingView(presentedDate: itemViewModel.date)
+                            Spacer()
+                        }
                     }
                 }.edgesIgnoringSafeArea(.all)
             }

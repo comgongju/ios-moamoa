@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CalendarDetailView: View {
+struct CalendarDetailView: View, Pagable {
     @Binding var presentedDate: Date
     var viewModel: CalendarItemViewModel
     
@@ -57,6 +57,16 @@ struct CalendarDetailView: View {
                 DailyHistoryList(viewModel: self.viewModel)
             }
         }
+    }
+    
+    func actionNextPage() {
+        guard let nextDayDate = Calendar.current.date(byAdding: .day, value: 1, to: self.presentedDate) else { return }
+        self.presentedDate = nextDayDate
+    }
+    
+    func actionPreviousPage() {
+        guard let previousDayDate = Calendar.current.date(byAdding: .day, value: -1, to: self.presentedDate) else { return }
+        self.presentedDate = previousDayDate
     }
 }
 

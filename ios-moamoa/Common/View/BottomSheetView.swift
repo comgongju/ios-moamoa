@@ -15,7 +15,7 @@ struct BottomSheetView<Content: View>: View {
     let height: CGFloat
     let content: Content
     
-    init(isPresenting: Binding<Bool>, height: CGFloat, content: () -> Content) {
+    init(isPresenting: Binding<Bool>, height: CGFloat, @ViewBuilder content: () -> Content) {
         self._isPresenting = isPresenting
         self.height = height
         self.content = content()
