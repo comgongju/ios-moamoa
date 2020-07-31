@@ -21,18 +21,18 @@ struct HistoryTabbarView: View {
                 ZStack {
                     Rectangle()
                         .frame(width: 86, height: 33)
-                        .foregroundColor(Color.white.opacity(0.25))
+                        .foregroundColor(.subColor)
                         .cornerRadius(23)
                         .scaleEffect(currentPage == .calendar ? 1 : 0)
                     Text(Str.historyCalendarName)
                         .font(.system(size: 15, weight: .heavy))
-                        .foregroundColor(.white)
+                        .foregroundColor(currentPage == .calendar ? .white : .mainColor)
                 }
             }
             
             Rectangle()
                 .frame(width: 1, height: 18)
-                .foregroundColor(.white)
+                .foregroundColor(.mainColor)
             
             Button(action: {
                 withAnimation(.spring(dampingFraction: 0.65)) {
@@ -42,12 +42,12 @@ struct HistoryTabbarView: View {
                 ZStack {
                     Rectangle()
                         .frame(width: 86, height: 33)
-                        .foregroundColor(Color.white.opacity(0.25))
+                        .foregroundColor(.subColor)
                         .cornerRadius(23)
                         .scaleEffect(currentPage == .list ? 1 : 0)
                     Text(Str.historyListName)
                         .font(.system(size: 15, weight: .heavy))
-                        .foregroundColor(.white)
+                        .foregroundColor(currentPage == .list ? .white : .mainColor)
                 }
             }
         }
@@ -57,6 +57,6 @@ struct HistoryTabbarView: View {
 struct HistoryTabbarView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryTabbarView(currentPage: .constant(.calendar))
-            .background(Color.mainColor)
+            .background(Color.backgroundColor)
     }
 }

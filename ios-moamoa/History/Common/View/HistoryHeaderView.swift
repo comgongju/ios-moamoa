@@ -20,13 +20,13 @@ struct HistoryHeaderView: View {
                 Image("btn_arrow_back")
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .foregroundColor(.white)
+                    .foregroundColor(.mainColor)
             }
 
             Text("\(presentedDate, formatter: DateFormatter.yearCommaMonth)")
                 .frame(width: 100, height: 25)
                 .font(.system(size: 22, weight: .bold))
-                .foregroundColor(.white)
+                .foregroundColor(.mainColor)
             
             Button(action: {
                 guard let nextMonthDate = Calendar.current.date(byAdding: .month, value: 1, to: self.presentedDate) else { return }
@@ -35,7 +35,7 @@ struct HistoryHeaderView: View {
                 Image("btn_arrow_forward")
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .foregroundColor(.white)
+                    .foregroundColor(.mainColor)
             }
         }
     }
@@ -44,6 +44,6 @@ struct HistoryHeaderView: View {
 struct HistoryHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryHeaderView(presentedDate: .constant(Date()))
-            .background(Color.mainColor)
+            .background(Color.backgroundColor)
     }
 }

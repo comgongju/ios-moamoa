@@ -17,7 +17,7 @@ struct DailyHistoryList: View {
             if self.viewModel.dayTotalIncome > 0 {
                 Text("+\(self.viewModel.dayTotalIncome)")
                     .font(.system(size: 15, weight: .bold))
-                    .foregroundColor(.pinkredTextColor)
+                    .foregroundColor(.incomeColor)
             }
             
             if self.viewModel.dayTotalSpending < 0 {
@@ -45,7 +45,7 @@ struct DailyHistoryList: View {
                     .lineLimit(1)
                     .frame(width: 60, alignment: .leading)
                     .font(.system(size: 12, weight: .bold))
-                    .foregroundColor(itemViewModel.changeBudget > 0 ? .pinkredTextColor : .mainColor)
+                    .foregroundColor(itemViewModel.changeBudget > 0 ? .incomeColor : .mainColor)
             }
             Text(itemViewModel.title)
                 .font(.system(size: 14))
