@@ -44,15 +44,16 @@ struct PagerView<Content: View>: View {
                     .onEnded { value in
                         let offset = value.translation.width / geometry.size.width
                         let newIndex = Int((CGFloat(self.currentIndex) - offset).rounded())
-                        if let detailPageView = self.content as? Pagable {
-                            if newIndex > self.currentIndex {
-                                detailPageView.actionNextPage()
-                            } else if newIndex < self.currentIndex {
-                                detailPageView.actionPreviousPage()
+                        let isPossiblePaging: Bool? = newIndex > self.currentIndex ? true : (newIndex < self.currentIndex ? false : nil)
+                        self.currentIndex = min(max(newIndex, 0), self.pageCount - 1)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+                            withAnimation(.none) {
+                                if let detailPageView = self.content as? Pagable, let isNextPaging = isPossiblePaging {
+                                    isNextPaging ? detailPageView.actionNextPage() : detailPageView.actionPreviousPage()
+                                    self.currentIndex = 1
+                                }
                             }
                         }
-                        self.currentIndex = 1
-//                      self.currentIndex = min(max(newIndex, 0), self.pageCount - 1)
                     }
             )
         }
