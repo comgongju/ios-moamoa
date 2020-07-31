@@ -31,7 +31,7 @@ struct HistoryView: View {
                 )
             )
         }
-        .background(Color.mainColor.edgesIgnoringSafeArea(.top))
+        .background(Color.backgroundColor.edgesIgnoringSafeArea(.top))
     }
 }
 

@@ -23,7 +23,7 @@ struct CalendarHeaderView: View {
                 Spacer()
                 Circle()
                     .frame(width: 11, height: 11)
-                    .foregroundColor(Color(red: 0.879, green: 0.201, blue: 0.337, opacity: 1))
+                    .foregroundColor(.incomeColor)
                 Text(Str.incomeText)
                     .font(.system(size: 14, weight: .bold))
                     .foregroundColor(.subTextColor)

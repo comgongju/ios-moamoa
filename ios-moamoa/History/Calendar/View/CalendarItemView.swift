@@ -26,7 +26,7 @@ struct CalendarItemView: View {
                 if self.viewModel.dayTotalIncome > 0 {
                     Text("+\(self.viewModel.dayTotalIncome)")
                         .font(.system(size: 10))
-                        .foregroundColor(Color(red: 0.906, green: 0.396, blue: 0.498, opacity: 1.0))
+                        .foregroundColor(.incomeColor)
                 }
                 if self.viewModel.dayTotalSpending < 0 {
                     Text("\(self.viewModel.dayTotalSpending)")
